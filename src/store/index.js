@@ -28,6 +28,9 @@ const store = new Vuex.Store({
     ],
   },
   mutations: {
+    addlist(state, payload) {
+      state.lists.push({ title: payload.title, cards:[] })
+    },
   },
   actions: {
     addlist(context, payload) {
@@ -35,7 +38,7 @@ const store = new Vuex.Store({
     },
   },
   getters: {
-  }
+  },
 })
 
 store.subscribe((mutation, state) => {
