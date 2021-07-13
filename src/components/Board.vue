@@ -11,14 +11,14 @@
               :title="item.title"
               :listIndex="index"
         />
-        <list-add />
+        <list-add/>
       </div>
     </main>
   </div>
 </template>
 
 <script>
-import ListAdd from './ListAdd.vue'
+import ListAdd from './ListAdd'
 import List from './List'
 import { mapState } from 'vuex'
  export default {
